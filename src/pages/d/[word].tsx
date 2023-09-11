@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import Meaning from "@/components/Meaning";
 import Empty from "@/components/Empty";
 import axios from "axios";
+import Link from "next/link";
 
 const dm_serif_display = DM_Serif_Display({
     weight: "400",
@@ -43,7 +44,7 @@ export default function () {
     return (
         <div className="w-full h-screen bg-white">
             <header className="w-full h-24 border-b-4 border-b-black flex items-center p-5">
-                <a className="text-3xl font-bold text-black" href="/">El Diccionario del Diccionario Furro</a>
+                <Link className="text-3xl font-bold text-black" href="/">El Diccionario del Diccionario Furro</>
             </header>
             <div className="w-full h-full p-5 flex flex-col gap-5">
                 <h1 className={`text-6xl font-bold text-black ${dm_serif_display.className}`}>
