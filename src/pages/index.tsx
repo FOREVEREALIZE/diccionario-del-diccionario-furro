@@ -11,6 +11,7 @@ export default function Page() {
                 <ul className="list-disc list-inside text-black">
                     <li>
                         <Link href="/d/bueno" className="text-blue-500 underline">Bueno</Link>
+                        <Link href="/d/yiwu" className="text-blue-500 underline">Yiwu</Link>
                     </li>
                 </ul>
             </div>
