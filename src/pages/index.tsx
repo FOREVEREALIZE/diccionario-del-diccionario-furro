@@ -10,7 +10,7 @@ export default function () {
                 <h1 className="text-2xl font-bold text-black">Definiciones disponibles:</h1>
                 <ul className="list-disc list-inside text-black">
                     <li>
-                        <a href="/d/bueno" className="text-blue-500 underline">Bueno</a>
+                        <Link href="/d/bueno" className="text-blue-500 underline">Bueno</Link>
                     </li>
                 </ul>
             </div>
