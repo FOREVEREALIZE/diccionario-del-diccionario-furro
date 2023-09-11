@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function () {
+export default function Page() {
     return (
         <div className="w-full h-screen bg-white">
             <header className="w-full h-24 border-b-4 border-b-black flex items-center p-5">

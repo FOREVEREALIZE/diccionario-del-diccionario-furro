@@ -16,8 +16,10 @@ const voces = Voces({
     subsets: ["latin-ext"],
 })
 
-export default function () {
+export default function Page() {
     const preresponse = {
+        formatted: "",
+        phonetics: "",
         inflections: []
     }
 
@@ -44,7 +46,7 @@ export default function () {
     return (
         <div className="w-full h-screen bg-white">
             <header className="w-full h-24 border-b-4 border-b-black flex items-center p-5">
-                <Link className="text-3xl font-bold text-black" href="/">El Diccionario del Diccionario Furro</>
+                <Link className="text-3xl font-bold text-black" href="/">El Diccionario del Diccionario Furro</Link>
             </header>
             <div className="w-full h-full p-5 flex flex-col gap-5">
                 <h1 className={`text-6xl font-bold text-black ${dm_serif_display.className}`}>
@@ -52,9 +54,15 @@ export default function () {
                     className={`text-2xl font-bold text-gray-500 ${voces.className}`}>/{(wordData || preresponse).phonetics}/</span>
                 </h1>
                 <Empty/>
-                {(wordData || preresponse).inflections.map((inflection) => {
+                {(wordData || preresponse).inflections.map((inflection: {
+                    number: string,
+                    type: string,
+                    inflected_form: string,
+                    definition: string
+                }, idx) => {
                     return (
                         <Meaning
+                            key={idx}
                             number={inflection.number}
                             type={inflection.type}
                             inflection={inflection.inflected_form}
