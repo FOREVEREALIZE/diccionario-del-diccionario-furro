@@ -18,7 +18,7 @@ export default function Page() {
                     </li>
                     
                     <li>
-                                            <Link href="/d/alex" className="text-blue-500 underline">Yiwu</Link>
+                                            <Link href="/d/alex" className="text-blue-500 underline">Alex</Link>
                                         </li>
                 </ul>
             </div>
