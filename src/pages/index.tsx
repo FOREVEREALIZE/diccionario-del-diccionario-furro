@@ -20,6 +20,10 @@ export default function Page() {
                     <li>
                         <Link href="/d/alex" className="text-blue-500 underline">Alex</Link>
                     </li>
+                    
+                    <li>
+                        <Link href="/d/cute" className="text-blue-500 underline">Cute</Link>
+                    </li>
                 </ul>
             </div>
         </div>
